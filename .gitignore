@@ -1,0 +1,27 @@
+# Xcode
+.DS_Store
+*/.DS_Store
+._*
+build/
+DerivedData/
+*.xcuserstate
+project.xcworkspace/xcuserdata/
+*.xcuserdatad
+xcuserdata/
+*.xcscmblueprint
+*.moved-aside
+
+# AppKit & Temporary Files
+/tmp/dynatify_*
+*.tmp
+*.log
+
+# Personal & Sensitive Data
+*.env
+*.env.*
+*.pem
+*.p12
+*.cer
+*.mobileprovision
+secrets/
+credentials/

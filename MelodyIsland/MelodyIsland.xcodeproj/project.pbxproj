@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 90;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CE0D53EFD1F4C82C07B3E36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43096D050FF8F56B237F1D9 /* AppDelegate.swift */; };
+		4394FF89834846EEDC7251DF /* MelodyIslandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7268CC4CB58ADB7E62BA918B /* MelodyIslandApp.swift */; };
+		3360176BAFA09A9BD9D77D09 /* DynatifyAudit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795C4835B30F40E203B86FCD /* DynatifyAudit.swift */; };
+		8C75FC3D963CF57FDB79035F /* IslandPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73162542EC23EFBE9BB627A6 /* IslandPanel.swift */; };
+		985918CA5918C8A7C178C0E6 /* IslandState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5E8142E16FF3661FBD2C09 /* IslandState.swift */; };
+		7365C53AF3CD7D8E152EAEDE /* IslandViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56940472C3362BA667BD6A9A /* IslandViewModel.swift */; };
+		3D0110DDCA58F3207840D7C0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB24161C09158AC856353E66 /* Extensions.swift */; };
+		1CFA4DDFBC19FD60B964E9D8 /* LyricsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C99187543AE586764FEE9C /* LyricsService.swift */; };
+		40689B1946E09E443C92F2EC /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA8267D9AE0EC4C10034EDC /* SpotifyService.swift */; };
+		A795BAEA3C738F5D3AAF32AD /* ClosedIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30737BA6682C2DF0C299A6D3 /* ClosedIslandView.swift */; };
+		060C1ABE0BB7571B2357916B /* CompactIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76369734388B13025CBD7940 /* CompactIslandView.swift */; };
+		55681EF78C197C5934335A3C /* AudioVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948B27ABE0FBE2DD77D8CD2 /* AudioVisualizer.swift */; };
+		307A8E3E33F4A1653ECEFA35 /* LiquidGlassShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D68D54278757BCE8F768E66 /* LiquidGlassShell.swift */; };
+		AF2D08D415DB99E64661A42F /* LyricLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7075537C702BFAD34BD8237 /* LyricLine.swift */; };
+		B8CC2B08DB71B66E991CC270 /* PlaybackControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E5DB3F40314916438F8C8E /* PlaybackControls.swift */; };
+		37A01D77BC0452E881C88F9A /* ControlCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EBF8E623A348B8EDD09024 /* ControlCenterView.swift */; };
+		718DDE2CDA23CE8AB4D43832 /* ExpandedIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5675491C03EA3BE3324AB269 /* ExpandedIslandView.swift */; };
+		EE0943F1B69AC311B501D20A /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B38931E9E6215703D804B89 /* GuideView.swift */; };
+		09941EC8C63D829A69FD188F /* IslandRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F9EC27E1C18410D5584A49 /* IslandRootView.swift */; };
+		587DA8C24D3288CAAEB40219 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EAC5DC75C58F4B95E93EA /* SettingsView.swift */; };
+		518741C677C787ED1DBD587E /* DirectLyricsIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC32AEDBB2190871F5B3912E /* DirectLyricsIslandView.swift */; };
+		A7B94F1B41D34257FDD0D571 /* DualSplitIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32CB5757DCEAE56CE918183 /* DualSplitIslandView.swift */; };
+		13055A53ABE6AEBACD887FC9 /* KaraokeTickerIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D826654DACBB6347CF51B6 /* KaraokeTickerIslandView.swift */; };
+		325EB7CD971733F3652A02B9 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B8B2EB03D122CD9A83A328E3 /* AppIcon.icns */; };
+		E751F962948699DEF32D3AB9 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9A87F7A9E88A2040DB4E78 /* AppIcon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E5A44E77D1F83BD32A660278 /* Dynatify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dynatify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A43096D050FF8F56B237F1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7268CC4CB58ADB7E62BA918B /* MelodyIslandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelodyIslandApp.swift; sourceTree = "<group>"; };
+		795C4835B30F40E203B86FCD /* DynatifyAudit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynatifyAudit.swift; sourceTree = "<group>"; };
+		73162542EC23EFBE9BB627A6 /* IslandPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandPanel.swift; sourceTree = "<group>"; };
+		8D5E8142E16FF3661FBD2C09 /* IslandState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandState.swift; sourceTree = "<group>"; };
+		56940472C3362BA667BD6A9A /* IslandViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandViewModel.swift; sourceTree = "<group>"; };
+		B8B2EB03D122CD9A83A328E3 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		7C9A87F7A9E88A2040DB4E78 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		BB24161C09158AC856353E66 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B8C99187543AE586764FEE9C /* LyricsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsService.swift; sourceTree = "<group>"; };
+		1DA8267D9AE0EC4C10034EDC /* SpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
+		30737BA6682C2DF0C299A6D3 /* ClosedIslandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedIslandView.swift; sourceTree = "<group>"; };
+		76369734388B13025CBD7940 /* CompactIslandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactIslandView.swift; sourceTree = "<group>"; };
+		4948B27ABE0FBE2DD77D8CD2 /* AudioVisualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizer.swift; sourceTree = "<group>"; };
+		9D68D54278757BCE8F768E66 /* LiquidGlassShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassShell.swift; sourceTree = "<group>"; };
+		B7075537C702BFAD34BD8237 /* LyricLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricLine.swift; sourceTree = "<group>"; };
+		B5E5DB3F40314916438F8C8E /* PlaybackControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControls.swift; sourceTree = "<group>"; };
+		E4EBF8E623A348B8EDD09024 /* ControlCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterView.swift; sourceTree = "<group>"; };
+		5675491C03EA3BE3324AB269 /* ExpandedIslandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedIslandView.swift; sourceTree = "<group>"; };
+		8B38931E9E6215703D804B89 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		58F9EC27E1C18410D5584A49 /* IslandRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandRootView.swift; sourceTree = "<group>"; };
+		FE4EAC5DC75C58F4B95E93EA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FC32AEDBB2190871F5B3912E /* DirectLyricsIslandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectLyricsIslandView.swift; sourceTree = "<group>"; };
+		A32CB5757DCEAE56CE918183 /* DualSplitIslandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualSplitIslandView.swift; sourceTree = "<group>"; };
+		E9D826654DACBB6347CF51B6 /* KaraokeTickerIslandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaraokeTickerIslandView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9E872B0C4F3AB11D258C39F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A85897F1A32FE9B91C081CD = {
+			isa = PBXGroup;
+			children = (
+				1369CE758DE91ECD50B7E938 /* Dynatify */,
+				B88D7E26791946AEFDCC8BB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B88D7E26791946AEFDCC8BB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5A44E77D1F83BD32A660278 /* Dynatify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1369CE758DE91ECD50B7E938 /* Dynatify */ = {
+			isa = PBXGroup;
+			children = (
+				0DDC40EEDD52DA9A38A198A6,
+				50F5028BF3A80190189AC8A7,
+				279E0AF60D145F47C3ACC6E8,
+				535C87D81B6847CED08DB36F,
+				01CFADCF7256DECC95C63FCC,
+			);
+			name = Dynatify;
+			path = MelodyIsland;
+			sourceTree = "<group>";
+		};
+		0DDC40EEDD52DA9A38A198A6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A43096D050FF8F56B237F1D9,
+				7268CC4CB58ADB7E62BA918B,
+			);
+			name = App;
+			path = App;
+			sourceTree = "<group>";
+		};
+		50F5028BF3A80190189AC8A7 /* Island */ = {
+			isa = PBXGroup;
+			children = (
+				795C4835B30F40E203B86FCD,
+				73162542EC23EFBE9BB627A6,
+				8D5E8142E16FF3661FBD2C09,
+				56940472C3362BA667BD6A9A,
+			);
+			name = Island;
+			path = Island;
+			sourceTree = "<group>";
+		};
+		279E0AF60D145F47C3ACC6E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8B2EB03D122CD9A83A328E3,
+				7C9A87F7A9E88A2040DB4E78,
+				BB24161C09158AC856353E66,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		535C87D81B6847CED08DB36F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B8C99187543AE586764FEE9C,
+				1DA8267D9AE0EC4C10034EDC,
+			);
+			name = Services;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		01CFADCF7256DECC95C63FCC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30737BA6682C2DF0C299A6D3,
+				76369734388B13025CBD7940,
+				78B79C66AAA64BCDF8DF614C,
+				E4EBF8E623A348B8EDD09024,
+				5675491C03EA3BE3324AB269,
+				8B38931E9E6215703D804B89,
+				58F9EC27E1C18410D5584A49,
+				FE4EAC5DC75C58F4B95E93EA,
+				F7FBC203D3ADE6AA0242543B,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		78B79C66AAA64BCDF8DF614C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4948B27ABE0FBE2DD77D8CD2,
+				9D68D54278757BCE8F768E66,
+				B7075537C702BFAD34BD8237,
+				B5E5DB3F40314916438F8C8E,
+			);
+			name = Components;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F7FBC203D3ADE6AA0242543B /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				FC32AEDBB2190871F5B3912E,
+				A32CB5757DCEAE56CE918183,
+				E9D826654DACBB6347CF51B6,
+			);
+			name = Styles;
+			path = Styles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		730950AD798A77AD508AA9E2 /* Dynatify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4977ED30DDFEF48DA821F2BF /* Build configuration list for PBXNativeTarget "Dynatify" */;
+			buildPhases = (
+				7EE609159AC086BAB15FF998 /* Sources */,
+				A9E872B0C4F3AB11D258C39F /* Frameworks */,
+				A2892AFC2D88060C0AA91373 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dynatify;
+			productName = Dynatify;
+			productReference = E5A44E77D1F83BD32A660278 /* Dynatify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1781F676DEDF5767F3243DB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					730950AD798A77AD508AA9E2 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = EA8A7DC255B9760C07FA9248 /* Build configuration list for PBXProject "Dynatify" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A85897F1A32FE9B91C081CD;
+			productRefGroup = B88D7E26791946AEFDCC8BB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				730950AD798A77AD508AA9E2 /* Dynatify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2892AFC2D88060C0AA91373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				325EB7CD971733F3652A02B9 /* AppIcon.icns in Resources */,
+				E751F962948699DEF32D3AB9 /* AppIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EE609159AC086BAB15FF998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CE0D53EFD1F4C82C07B3E36 /* AppDelegate.swift in Sources */,
+				4394FF89834846EEDC7251DF /* MelodyIslandApp.swift in Sources */,
+				3360176BAFA09A9BD9D77D09 /* DynatifyAudit.swift in Sources */,
+				8C75FC3D963CF57FDB79035F /* IslandPanel.swift in Sources */,
+				985918CA5918C8A7C178C0E6 /* IslandState.swift in Sources */,
+				7365C53AF3CD7D8E152EAEDE /* IslandViewModel.swift in Sources */,
+				3D0110DDCA58F3207840D7C0 /* Extensions.swift in Sources */,
+				1CFA4DDFBC19FD60B964E9D8 /* LyricsService.swift in Sources */,
+				40689B1946E09E443C92F2EC /* SpotifyService.swift in Sources */,
+				A795BAEA3C738F5D3AAF32AD /* ClosedIslandView.swift in Sources */,
+				060C1ABE0BB7571B2357916B /* CompactIslandView.swift in Sources */,
+				55681EF78C197C5934335A3C /* AudioVisualizer.swift in Sources */,
+				307A8E3E33F4A1653ECEFA35 /* LiquidGlassShell.swift in Sources */,
+				AF2D08D415DB99E64661A42F /* LyricLine.swift in Sources */,
+				B8CC2B08DB71B66E991CC270 /* PlaybackControls.swift in Sources */,
+				37A01D77BC0452E881C88F9A /* ControlCenterView.swift in Sources */,
+				718DDE2CDA23CE8AB4D43832 /* ExpandedIslandView.swift in Sources */,
+				EE0943F1B69AC311B501D20A /* GuideView.swift in Sources */,
+				09941EC8C63D829A69FD188F /* IslandRootView.swift in Sources */,
+				587DA8C24D3288CAAEB40219 /* SettingsView.swift in Sources */,
+				518741C677C787ED1DBD587E /* DirectLyricsIslandView.swift in Sources */,
+				A7B94F1B41D34257FDD0D571 /* DualSplitIslandView.swift in Sources */,
+				13055A53ABE6AEBACD887FC9 /* KaraokeTickerIslandView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		720053A8D23AE1812A418094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "27.0";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		935AC6FFCB996012ECD3A455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "27.0";
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		075A3F45448538490E577636 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MelodyIsland/Dynatify.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_REQUIRED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Dynatify;
+				INFOPLIST_KEY_CFBundleName = Dynatify;
+				INFOPLIST_KEY_CFBundleIconFile = AppIcon;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Dynatify needs Apple Events to communicate with Spotify and Apple Music.";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = "27.0";
+				MARKETING_VERSION = "1.0";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uwayxt.Dynatify";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = "6.0";
+			};
+			name = Debug;
+		};
+		9E4B6119718769058EA9DAB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MelodyIsland/Dynatify.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGNING_REQUIRED = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Dynatify;
+				INFOPLIST_KEY_CFBundleName = Dynatify;
+				INFOPLIST_KEY_CFBundleIconFile = AppIcon;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Dynatify needs Apple Events to communicate with Spotify and Apple Music.";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				MACOSX_DEPLOYMENT_TARGET = "27.0";
+				MARKETING_VERSION = "1.0";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uwayxt.Dynatify";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = "6.0";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA8A7DC255B9760C07FA9248 /* Build configuration list for PBXProject "Dynatify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				720053A8D23AE1812A418094 /* Debug */,
+				935AC6FFCB996012ECD3A455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4977ED30DDFEF48DA821F2BF /* Build configuration list for PBXNativeTarget "Dynatify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075A3F45448538490E577636 /* Debug */,
+				9E4B6119718769058EA9DAB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 1781F676DEDF5767F3243DB0 /* Project object */;
+}
