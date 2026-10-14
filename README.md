@@ -161,6 +161,9 @@ brew tap uwayxt/dynatify
 brew install --cask dynatify
 ```
 
+> [!NOTE]
+> If your Homebrew version prompts to trust custom third-party taps on first install, run `brew trust uwayxt/dynatify`.
+
 To update Dynatify in the future via Homebrew:
 ```bash
 brew upgrade --cask dynatify
