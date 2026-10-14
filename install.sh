@@ -65,8 +65,9 @@ echo -e "${CYAN}==>${NC} ${BOLD}3. Memasang Dynatify ke /Applications...${NC}"
 rm -rf "$TARGET_APP"
 cp -R "$DERIVED_APP" "$TARGET_APP"
 
-# Clear quarantine flags for smooth launch
+# Clear quarantine flags and register with macOS LaunchServices for instant icon display
 xattr -dr com.apple.quarantine "$TARGET_APP" 2>/dev/null || true
+/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f -R -trusted "$TARGET_APP" 2>/dev/null || true
 
 echo -e "${GREEN}${BOLD}✔ Pemasangan Berhasil!${NC}"
 echo -e "Dynatify telah terpasang di: ${BOLD}$TARGET_APP${NC}\n"

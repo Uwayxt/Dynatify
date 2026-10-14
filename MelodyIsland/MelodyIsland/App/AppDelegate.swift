@@ -17,6 +17,15 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWindowDele
     private var localKeyMonitor: Any?
 
     func applicationDidFinishLaunching(_ notification: Notification) {
+        // Ensure App Icon is explicitly set for macOS Dock
+        if let iconURL = Bundle.main.url(forResource: "AppIcon", withExtension: "icns"),
+           let iconImage = NSImage(contentsOf: iconURL) {
+            NSApp.applicationIconImage = iconImage
+        } else if let iconURL = Bundle.main.url(forResource: "AppIcon", withExtension: "png"),
+                  let iconImage = NSImage(contentsOf: iconURL) {
+            NSApp.applicationIconImage = iconImage
+        }
+
         // Start as regular app with focus so macOS can present the Automation authorization prompt
         NSApp.setActivationPolicy(.regular)
         NSApp.activate(ignoringOtherApps: true)
