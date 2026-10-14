@@ -101,30 +101,21 @@ struct ControlCenterView: View {
         VStack(spacing: 14) {
             HStack(alignment: .center, spacing: 14) {
                 // App Logo / Icon
-                ZStack {
-                    RoundedRectangle(cornerRadius: 14, style: .continuous)
-                        .fill(
-                            LinearGradient(
-                                colors: [Color(hex: "#0E1816"), Color(hex: "#4A7E74")],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
-                        .frame(width: 54, height: 54)
-                        .shadow(color: Color.black.opacity(0.3), radius: 6, x: 0, y: 3)
-
-                    // Frosted pill inside logo
-                    Capsule()
-                        .fill(Color.white.opacity(0.18))
-                        .frame(width: 38, height: 18)
-                        .overlay(
-                            HStack(spacing: 3) {
-                                Capsule().fill(Color(hex: "#1DB954")).frame(width: 4, height: 8)
-                                Capsule().fill(Color(hex: "#1DB954")).frame(width: 4, height: 14)
-                                Capsule().fill(Color(hex: "#1DB954")).frame(width: 4, height: 10)
-                            }
-                        )
+                Group {
+                    if let imagePath = Bundle.main.path(forResource: "AppIcon", ofType: "png"),
+                       let nsImage = NSImage(contentsOfFile: imagePath) {
+                        Image(nsImage: nsImage)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    } else {
+                        Image(nsImage: NSApp.applicationIconImage)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    }
                 }
+                .frame(width: 54, height: 54)
+                .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                .shadow(color: Color.black.opacity(0.3), radius: 6, x: 0, y: 3)
 
                 // Title & Tagline
                 VStack(alignment: .leading, spacing: 3) {
