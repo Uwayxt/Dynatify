@@ -17,12 +17,6 @@ cask "dynatify" do
 
   app "Dynatify.app"
 
-  uninstall quit: "com.uwayxt.Dynatify",
-            delete: [
-              "~/Library/Application Support/Dynatify",
-              "~/Library/Preferences/com.uwayxt.Dynatify.plist",
-            ]
-
   zap trash: [
     "~/Library/Application Support/Dynatify",
     "~/Library/Caches/com.uwayxt.Dynatify",
