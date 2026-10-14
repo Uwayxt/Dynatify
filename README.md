@@ -164,6 +164,10 @@ brew install --cask dynatify
 > [!NOTE]
 > If your Homebrew version prompts to trust custom third-party taps on first install, run `brew trust uwayxt/dynatify`.
 
+> [!TIP]
+> **First Launch on macOS (Gatekeeper Notice):**
+> Because Dynatify is an independent open-source utility without a paid Apple Developer subscription, macOS Gatekeeper may show a *"Dynatify.app Not Opened"* prompt on first launch. Simply go to **System Settings > Privacy & Security**, scroll down to the Security section and click **"Open Anyway"** (or run `xattr -cr /Applications/Dynatify.app` in Terminal).
+
 To update Dynatify in the future via Homebrew:
 ```bash
 brew upgrade --cask dynatify
