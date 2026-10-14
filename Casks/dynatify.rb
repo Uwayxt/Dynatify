@@ -1,6 +1,6 @@
 cask "dynatify" do
   version "1.0.0"
-  sha256 "8e2ea324a2748fff6f80765459b89c989e7dda8c0e87773ec82dcf747be3ec78"
+  sha256 "b4dfd6322393bed72a13644092864c8a217edda99703938c5e3b5cb93fe3849b"
 
   url "https://github.com/Uwayxt/Dynatify/releases/download/v#{version}/Dynatify.zip"
   name "Dynatify"

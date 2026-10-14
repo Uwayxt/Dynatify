@@ -284,7 +284,7 @@ actor MusicPlayerService {
         let script = "tell application \"\(appName)\" to \(action)"
         await Task.detached(priority: .userInitiated) {
             Self.executeScript(script)
-            try? cmdName.write(toFile: "/tmp/dynatify_cmd", atomically: true, encoding: .utf8)
+            Self.writeCommandSafely(cmdName)
         }.value
     }
 
@@ -295,7 +295,7 @@ actor MusicPlayerService {
         let script = "tell application \"\(appName)\" to set player position to \(posStr)"
         await Task.detached(priority: .userInitiated) {
             Self.executeScript(script)
-            try? "seek:\(posStr)".write(toFile: "/tmp/dynatify_cmd", atomically: true, encoding: .utf8)
+            Self.writeCommandSafely("seek:\(posStr)")
         }.value
     }
 
@@ -306,8 +306,18 @@ actor MusicPlayerService {
         let script = "tell application \"\(appName)\" to set sound volume to \(volInt)"
         await Task.detached(priority: .userInitiated) {
             Self.executeScript(script)
-            try? "vol:\(volInt)".write(toFile: "/tmp/dynatify_cmd", atomically: true, encoding: .utf8)
+            Self.writeCommandSafely("vol:\(volInt)")
         }.value
+    }
+
+    // MARK: - Secure Command Writing
+    private static func writeCommandSafely(_ command: String) {
+        let path = "/tmp/dynatify_cmd"
+        if let attrs = try? FileManager.default.attributesOfItem(atPath: path),
+           (attrs[.type] as? FileAttributeType) == .typeSymbolicLink {
+            try? FileManager.default.removeItem(atPath: path)
+        }
+        try? command.write(toFile: path, atomically: true, encoding: .utf8)
     }
 
     // MARK: - Script Execution with Fallback
@@ -330,16 +340,10 @@ actor MusicPlayerService {
         do {
             try p.run()
             let data = pipe.fileHandleForReading.readDataToEndOfFile()
-            let errData = errPipe.fileHandleForReading.readDataToEndOfFile()
             p.waitUntilExit()
             let result = String(data: data, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines)
-            let errStr = String(data: errData, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
-            let msg = "exitCode: \(p.terminationStatus), stdout: '\(result ?? "")', stderr: '\(errStr)'\n"
-            try? msg.write(toFile: "/tmp/dynatify_debug.log", atomically: true, encoding: .utf8)
             return result
         } catch {
-            let msg = "runOsascript error: \(error)\n"
-            try? msg.write(toFile: "/tmp/dynatify_debug.log", atomically: true, encoding: .utf8)
             return nil
         }
     }
