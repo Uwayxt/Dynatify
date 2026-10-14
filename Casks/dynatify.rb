@@ -1,11 +1,11 @@
 cask "dynatify" do
   version "1.0.0"
-  sha256 :no_check
+  sha256 "771b734a5cbdea30cea4ee799495105ebf0af56ddde96bdbc3f8af6f550b50ab"
 
-  url "https://github.com/uwayxt/Dynatify/releases/download/v#{version}/Dynatify.zip"
+  url "https://github.com/Uwayxt/Dynatify/releases/download/v#{version}/Dynatify.zip"
   name "Dynatify"
   desc "Dynamic Island & Real-Time Synced Lyrics for Spotify & Apple Music on macOS"
-  homepage "https://github.com/uwayxt/Dynatify"
+  homepage "https://github.com/Uwayxt/Dynatify"
 
   livecheck do
     url :url
